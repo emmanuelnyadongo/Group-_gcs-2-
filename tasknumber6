@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Read file line by line and generate personalized message for each name
+while read name; do
+  # Replace {name} placeholder in message template with current name
+  message=$(sed "s/{name}/$name/g" message_template.txt)
+  # Save message to file named after current name
+  echo "$message" > "$name.txt"
+done < names.txt
+

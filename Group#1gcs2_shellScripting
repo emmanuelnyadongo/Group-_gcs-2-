@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Print strings on screen
+echo "one"
+echo "two"
+echo "three"
+echo "four"
+echo "five"
+
+# Create text file with strings
+numbers="$(date +'%Y-%m-%d')-file.txt"
+echo -e "one\ntwo\nthree\nfour\nfive" > "$numbers"

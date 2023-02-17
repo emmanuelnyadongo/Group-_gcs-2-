@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Read file line by line and create folder for each line
+while read folder_name; do
+  mkdir "$filename"
+done < filename.txt
